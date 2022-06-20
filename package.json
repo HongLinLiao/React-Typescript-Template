@@ -4,8 +4,8 @@
   "description": "React Typescript Template Repository",
   "main": "index.html",
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack "
+    "start": "webpack serve --env ENV=development --mode development",
+    "build": "webpack --env ENV=production --mode production"
   },
   "author": "Leo Liao",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
+    "dotenv-webpack": "^7.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "webpack": "^5.73.0",
